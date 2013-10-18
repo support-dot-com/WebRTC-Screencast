@@ -253,7 +253,7 @@
 
 		var defaultSipContactPhoneNumber="" ;
 
-		var defaultWsUrl = "ws://" + "webrtc.free-solutions.org:8443" + "/ws/server?username=null&password=null&resource=" + defaultSipDisplayName
+		var defaultWsUrl = "ws://" + "mywebrtcurl" + "/ws/server?username=null&password=null&resource=" + defaultSipDisplayName
 
 
 
@@ -445,7 +445,7 @@
 
 
 
-			ws = new WebSocket(protocol + "://" + "webrtc.free-solutions.org:8443" + "/ws/server?username=null&password=null&resource=" + me, "xmpp");
+			ws = new WebSocket(protocol + "://" + "mywebrtcurl" + "/ws/server?username=null&password=null&resource=" + me, "xmpp");
 
 			ws.onopen = onOpen;
 
@@ -455,7 +455,7 @@
 
 
 
-			webrtc.jid = me + "@" + "webrtc.free-solutions.org" + "/" + me;
+			webrtc.jid = me + "@" + "mywebrtcurl" + "/" + me;
 
 		}
 
@@ -541,7 +541,7 @@
 
 		{
 
-			webrtc.jingleInitiate(to + "@webrtc.free-solutions.org/" + to);
+			webrtc.jingleInitiate(to + "@mywebrtcurl/" + to);
 
 		}
 
